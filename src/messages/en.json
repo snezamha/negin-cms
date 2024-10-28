@@ -1,5 +1,36 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "NotFound": {
+    "404": "Sorry, we could not find this page.",
+    "backToHome": "Back to home"
+  },
+  "Auth": {
+    "login": "Login",
+    "logout": "Log out",
+    "header": "Login and authenticate users",
+    "phoneNumber": "Phone number",
+    "sendCode": "Send code",
+    "verificationCode": "Verification code",
+    "checkCode": "Check code",
+    "resendCodeText": "Resend the code and its validity period",
+    "second": "Second",
+    "resendCode": "Resend verification code",
+    "message": {
+      "codeSent": "Verification code has been sent",
+      "receivedCode": "You have just received a verification code",
+      "WrongCode": "Verification code is incorrect"
+    }
+  },
+  "Locale": {
+    "english": "English",
+    "persian": "Persian"
+  },
+  "Footer": {
+    "footerText1": "CopyRight © {year} By Samantel, All rights Reserved.",
+    "footerText2": "Design & Develop by:"
+  },
+  "Menu": {
+    "dashboard": "Dashboard",
+    "ecommerce": "Ecommerce",
+    "apps": "Apps"
   }
 }

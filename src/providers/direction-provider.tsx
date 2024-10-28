@@ -7,7 +7,7 @@ const DirectionProvider = ({
   direction,
   children,
 }: {
-  direction: any;
+  direction: 'ltr' | 'rtl';
   children: React.ReactNode;
 }) => {
   const [, setConfig] = useConfig();
@@ -19,7 +19,15 @@ const DirectionProvider = ({
     }));
   }, [direction, setConfig]);
 
-  return <RadixDirProvider dir={direction}>{children}</RadixDirProvider>;
+  return (
+    <RadixDirProvider dir={direction}>
+      <div
+        style={{ fontFamily: direction === 'rtl' ? 'IranYekan' : 'sans-serif' }}
+      >
+        {children}
+      </div>
+    </RadixDirProvider>
+  );
 };
 
 export default DirectionProvider;

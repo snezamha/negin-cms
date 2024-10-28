@@ -30,7 +30,10 @@ export default async function RootLayout({
   const direction = getLangDir(locale);
   return (
     <html suppressHydrationWarning lang={locale} dir={direction}>
-      <body suppressHydrationWarning={true} className={`${inter.className} dashcode-app`}>
+      <body
+        suppressHydrationWarning={true}
+        className={`${inter.className} `}
+      >
         <NextIntlClientProvider messages={messages} locale={locale}>
           <AuthProvider>
             <ThemeProvider attribute='class' defaultTheme='light'>
